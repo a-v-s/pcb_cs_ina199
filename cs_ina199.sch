@@ -1,0 +1,228 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L AvS_Amplifier_Current:INA199 U1
+U 1 1 5E10AACC
+P 5450 3100
+F 0 "U1" H 5450 3425 50  0000 C CNN
+F 1 "INA199" H 5450 3334 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering" H 5450 3100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ina199.pdf" H 5450 3100 50  0001 C CNN
+	1    5450 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 5E10BC60
+P 6050 3000
+F 0 "R1" H 6109 3046 50  0000 L CNN
+F 1 "R_Small" H 6109 2955 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6050 3000 50  0001 C CNN
+F 3 "~" H 6050 3000 50  0001 C CNN
+	1    6050 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3100 6050 3100
+Wire Wire Line
+	5800 3000 5850 3000
+Wire Wire Line
+	5850 3000 5850 2900
+Wire Wire Line
+	5850 2900 6050 2900
+Wire Wire Line
+	6050 2900 6050 2800
+Wire Wire Line
+	6050 2800 6550 2800
+Connection ~ 6050 2900
+Wire Wire Line
+	6050 3200 6550 3200
+Connection ~ 6050 3100
+Wire Wire Line
+	5100 3100 4950 3100
+Wire Wire Line
+	5100 3000 4950 3000
+Wire Wire Line
+	4950 3000 4950 3100
+Connection ~ 4950 3100
+Wire Wire Line
+	4950 3100 4800 3100
+Wire Wire Line
+	5100 3200 4800 3200
+Wire Wire Line
+	5800 3200 5800 3300
+Wire Wire Line
+	5800 3300 4800 3300
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 5E10D069
+P 4150 3800
+F 0 "J1" H 4068 3475 50  0000 C CNN
+F 1 "Conn_01x03" H 4068 3566 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4150 3800 50  0001 C CNN
+F 3 "~" H 4150 3800 50  0001 C CNN
+	1    4150 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5E10DD31
+P 6750 2950
+F 0 "J2" H 6830 2942 50  0000 L CNN
+F 1 "Conn_01x02" H 6830 2851 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6750 2950 50  0001 C CNN
+F 3 "~" H 6750 2950 50  0001 C CNN
+	1    6750 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 3100 6050 3200
+Wire Wire Line
+	6550 2800 6550 2950
+Wire Wire Line
+	6550 3050 6550 3200
+$Comp
+L Device:C_Small C1
+U 1 1 5E11035A
+P 4900 3850
+F 0 "C1" H 4992 3896 50  0000 L CNN
+F 1 "C_Small" H 4992 3805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4900 3850 50  0001 C CNN
+F 3 "~" H 4900 3850 50  0001 C CNN
+	1    4900 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5E110C1F
+P 4900 3950
+F 0 "#PWR0101" H 4900 3700 50  0001 C CNN
+F 1 "GND" H 4905 3777 50  0000 C CNN
+F 2 "" H 4900 3950 50  0001 C CNN
+F 3 "" H 4900 3950 50  0001 C CNN
+	1    4900 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0102
+U 1 1 5E110FAB
+P 4900 3750
+F 0 "#PWR0102" H 4900 3600 50  0001 C CNN
+F 1 "VCC" H 4917 3923 50  0000 C CNN
+F 2 "" H 4900 3750 50  0001 C CNN
+F 3 "" H 4900 3750 50  0001 C CNN
+	1    4900 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0103
+U 1 1 5E112FBB
+P 4800 3200
+F 0 "#PWR0103" H 4800 3050 50  0001 C CNN
+F 1 "VCC" V 4818 3327 50  0000 L CNN
+F 2 "" H 4800 3200 50  0001 C CNN
+F 3 "" H 4800 3200 50  0001 C CNN
+	1    4800 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5E113547
+P 4800 3100
+F 0 "#PWR0104" H 4800 2850 50  0001 C CNN
+F 1 "GND" V 4805 2972 50  0000 R CNN
+F 2 "" H 4800 3100 50  0001 C CNN
+F 3 "" H 4800 3100 50  0001 C CNN
+	1    4800 3100
+	0    1    1    0   
+$EndComp
+Text GLabel 4800 3300 0    50   Input ~ 0
+OUT
+$Comp
+L power:VCC #PWR0105
+U 1 1 5E11422F
+P 4400 3800
+F 0 "#PWR0105" H 4400 3650 50  0001 C CNN
+F 1 "VCC" V 4418 3927 50  0000 L CNN
+F 2 "" H 4400 3800 50  0001 C CNN
+F 3 "" H 4400 3800 50  0001 C CNN
+	1    4400 3800
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5E114239
+P 4400 3700
+F 0 "#PWR0106" H 4400 3450 50  0001 C CNN
+F 1 "GND" V 4405 3572 50  0000 R CNN
+F 2 "" H 4400 3700 50  0001 C CNN
+F 3 "" H 4400 3700 50  0001 C CNN
+	1    4400 3700
+	0    -1   1    0   
+$EndComp
+Text GLabel 4400 3900 2    50   Input ~ 0
+OUT
+Wire Wire Line
+	4350 3700 4400 3700
+Wire Wire Line
+	4350 3800 4400 3800
+Wire Wire Line
+	4350 3900 4400 3900
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5E11C7AE
+P 5850 3650
+F 0 "H1" H 5950 3699 50  0000 L CNN
+F 1 "MountingHole" H 5950 3608 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 5850 3650 50  0001 C CNN
+F 3 "~" H 5850 3650 50  0001 C CNN
+	1    5850 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5E121357
+P 6600 3600
+F 0 "H2" H 6700 3649 50  0000 L CNN
+F 1 "MountingHole" H 6700 3558 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 6600 3600 50  0001 C CNN
+F 3 "~" H 6600 3600 50  0001 C CNN
+	1    6600 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E12378F
+P 5850 3750
+F 0 "#PWR?" H 5850 3500 50  0001 C CNN
+F 1 "GND" H 5855 3577 50  0000 C CNN
+F 2 "" H 5850 3750 50  0001 C CNN
+F 3 "" H 5850 3750 50  0001 C CNN
+	1    5850 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E1239EE
+P 6600 3700
+F 0 "#PWR?" H 6600 3450 50  0001 C CNN
+F 1 "GND" H 6605 3527 50  0000 C CNN
+F 2 "" H 6600 3700 50  0001 C CNN
+F 3 "" H 6600 3700 50  0001 C CNN
+	1    6600 3700
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
